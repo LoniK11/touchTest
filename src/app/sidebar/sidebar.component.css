@@ -1,5 +1,6 @@
 mat-sidenav-container {
-    height: 100vh;
+    height: 100%;
+    overflow: auto;
 }
 
 mat-sidenav {
@@ -21,4 +22,13 @@ mat-sidenav {
     }
 }
 
-  
+mat-sidenav-content {
+    height: 100%;
+    
+    div.router-outlet {
+        height: calc(100% - 48px);
+        width: 100%;
+        /* background-color: red; */
+        overflow: auto;
+    }
+} 

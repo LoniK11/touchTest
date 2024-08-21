@@ -8,16 +8,19 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
 
 import { HomeComponent } from './home/home.component';
 import { AddPlayerComponent } from './add-player/add-player.component';
+import { AddTeamComponent } from './add-team/add-team.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     HomeComponent,
-    AddPlayerComponent
+    AddPlayerComponent,
+    AddTeamComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,8 @@ import { AddPlayerComponent } from './add-player/add-player.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatSidenavModule,
-    MatSelectModule
+    MatSelectModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

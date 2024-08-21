@@ -13,7 +13,9 @@ export class HomeComponent{
   ]
 
   getWidth(){
-    alert("Hello")
+    alert("Hello");
   }
+
+  
 
 }
