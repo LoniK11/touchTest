@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="firstPlayer">
+        <h2>Player One</h2>
+        <br>
+        <h3>Select player</h3>
+        <mat-form-field class="player">
+            <mat-select>
+                <mat-option *ngFor="let player of playerList" [value]="player">{{ player }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <h3>Select team</h3>
+        <mat-form-field class="team">
+            <mat-select>
+                <mat-option *ngFor="let player of playerList" [value]="player">{{ player }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <h3>Select team</h3>
+        <mat-form-field class="team">
+            <mat-select>
+                <mat-option *ngFor="let player of playerList" [value]="player">{{ player }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <br><br>
+    <div class="firstPlayer">
+        <h2>Player One</h2>
+        <br>
+        <h3>Select player</h3>
+        <mat-form-field class="player">
+            <mat-select>
+                <mat-option *ngFor="let player of playerList" [value]="player">{{ player }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <h3>Select team</h3>
+        <mat-form-field class="team">
+            <mat-select>
+                <mat-option *ngFor="let player of playerList" [value]="player">{{ player }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <h3>Select team</h3>
+        <mat-form-field class="team">
+            <mat-select>
+                <mat-option *ngFor="let player of playerList" [value]="player">{{ player }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <button mat-stroked-button color="primary" (click)="getWidth()"  #myBtn >Add result</button>
+</div>

@@ -1,0 +1,24 @@
+mat-sidenav-container {
+    height: 100vh;
+}
+
+mat-sidenav {
+    width: 50%;
+    height: 100vh;
+
+    ul {
+        list-style: none;
+        padding-left: 20px;
+
+        li {
+            font-size: 14px;
+            margin-top: 15px;
+            font-family: "Cabin", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            cursor: pointer;
+        }
+    }
+}
+
+  

@@ -1,0 +1,15 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="over" [(opened)]="opened">
+      <ul>
+        <li *ngFor="let option of optionList" (click)="navigateTo(option)">{{ option | uppercase }}</li>
+      </ul>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <button mat-button (click)="opened = !opened">
+        <span class="material-icons">
+          menu
+        </span>
+      </button>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
