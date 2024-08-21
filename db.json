@@ -1,0 +1,19 @@
+{
+  "player": [
+    {
+      "id": "40a2",
+      "name": "Valoni"
+    }
+  ],
+  "team": [
+    {
+      "id": "18f9",
+      "name": "Manchester United"
+    },
+    {
+      "id": "ef5a",
+      "name": "Bayern Munich"
+    }
+  ],
+  "result": []
+}

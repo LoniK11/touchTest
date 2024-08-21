@@ -1,50 +1,54 @@
-<div class="container"  #myBtn >
-    <div class="firstPlayer">
-        <h2>Player One</h2>
-        <h3>Select player</h3>
-        <mat-form-field class="player">
-            <mat-select>
-                <mat-option *ngFor="let player of playerList" [value]="player">{{ player }}</mat-option>
-            </mat-select>
-        </mat-form-field>
+<div class="container" >
+    <form [formGroup]="form" (ngSubmit)="submitForm()">
+        <div class="firstPlayer">
+            <h2>Player One</h2>
+            <h3>Select player</h3>
+            <mat-form-field class="player">
+                <mat-select formControlName="playerOneName">
+                    <mat-option *ngFor="let player of playerList" [value]="player" >{{ player.name }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+    
+            <h3>Select team</h3>
+            <mat-form-field class="team">
+                <mat-select formControlName="playerOneTeam">
+                    <mat-option *ngFor="let team of teamList" [value]="team">{{ team.name }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+    
+            <h3>Select goals scored</h3>
+            <mat-form-field class="goals">
+                <mat-select formControlName="playerOneGoals">
+                    <mat-option *ngFor="let goals of goalsList" [value]="goals">{{ goals }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
 
-        <h3>Select team</h3>
-        <mat-form-field class="team">
-            <mat-select>
-                <mat-option *ngFor="let player of playerList" [value]="player">{{ player }}</mat-option>
-            </mat-select>
-        </mat-form-field>
 
-        <h3>Select team</h3>
-        <mat-form-field class="team">
-            <mat-select>
-                <mat-option *ngFor="let player of playerList" [value]="player">{{ player }}</mat-option>
-            </mat-select>
-        </mat-form-field>
-    </div>
-    <div class="firstPlayer">
-        <h2>Player One</h2>
-        <h3>Select player</h3>
-        <mat-form-field class="player">
-            <mat-select>
-                <mat-option *ngFor="let player of playerList" [value]="player">{{ player }}</mat-option>
-            </mat-select>
-        </mat-form-field>
-
-        <h3>Select team</h3>
-        <mat-form-field class="team">
-            <mat-select>
-                <mat-option *ngFor="let player of playerList" [value]="player">{{ player }}</mat-option>
-            </mat-select>
-        </mat-form-field>
-
-        <h3>Select team</h3>
-        <mat-form-field class="team">
-            <mat-select>
-                <mat-option *ngFor="let player of playerList" [value]="player">{{ player }}</mat-option>
-            </mat-select>
-        </mat-form-field>
-    </div>
-
-    <button mat-stroked-button color="primary" (click)="getWidth()">Add result</button>
+        <div class="secondPlayer">
+            <h2>Player Two</h2>
+            <h3>Select player</h3>
+            <mat-form-field class="player">
+                <mat-select formControlName="playerTwoName">
+                    <mat-option *ngFor="let player of playerList" [value]="player">{{ player.name }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+    
+            <h3>Select team</h3>
+            <mat-form-field class="team">
+                <mat-select formControlName="playerTwoTeam">
+                    <mat-option *ngFor="let team of teamList" [value]="team">{{ team.name }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+    
+            <h3>Select goals scored</h3>
+            <mat-form-field class="goals">
+                <mat-select formControlName="playerTwoGoals">
+                    <mat-option *ngFor="let goals of goalsList" [value]="goals">{{ goals }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    
+        <button mat-stroked-button color="primary" type="submit">Add result</button>
+    </form>
 </div>
