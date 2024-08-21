@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'TestScreenApp';
 
+  opened:boolean = false;
+
   onTouch(){
     alert("Hello");
   }
